@@ -2,7 +2,7 @@ require 'pry'
 
 class CashRegister
   attr_accessor :total,
-  attr_reader :discount, :title, :price, :quantity
+  attr_reader :discount, :title, :last_price
   
   
   def initialize(discount=0)
