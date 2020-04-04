@@ -33,8 +33,10 @@ class CashRegister
     @all
   end 
   
-  # def void_last_transaction
-  #   @last_price
-  # end 
+  def void_last_transaction
+    if @all.pop == self.title 
+        @last_price = self.price 
+    end 
+  end 
   
 end
