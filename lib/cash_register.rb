@@ -4,7 +4,7 @@ class CashRegister
   attr_accessor :total
   attr_reader :discount, :title, :price, :quantity
   
-  @@items = []
+  @items = []
   
   def initialize(discount=0)
       @total = 0
@@ -15,7 +15,7 @@ class CashRegister
       self.total += (price*quantity)
       
       quantity.times do 
-        @@items << title 
+        @items << title 
       end 
   end 
   
@@ -30,10 +30,7 @@ class CashRegister
   end
   
   def items 
-    # if @quantity > 0 
-    #   @quantity.times {@@items << "#{self.title}"}
-      @@items
-    # end 
+      @items
   end 
   
 end
