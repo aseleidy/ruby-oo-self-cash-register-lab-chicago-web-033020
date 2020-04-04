@@ -19,7 +19,7 @@ class CashRegister
       end
       
       if @all.pop == self.title 
-        @last_price = price 
+        @last_price = self.price 
       end 
       
   end 
