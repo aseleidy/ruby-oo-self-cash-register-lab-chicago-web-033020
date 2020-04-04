@@ -17,7 +17,7 @@ class CashRegister
       
       quantity.times do 
         @all << title 
-        @prices << price
+        @prices << (price*quantity)
       end
   end 
   
@@ -38,9 +38,7 @@ class CashRegister
   
   
   def void_last_transaction
-    binding.pry
-    @price.last 
-    last_amount = (@price.last)*(self.quantity)
+    last_amount = @prices.last
     @total -= last_amount
     # if @all.last == self.title 
     #   binding.pry 
