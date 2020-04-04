@@ -36,7 +36,7 @@ class CashRegister
   
   
   def void_last_transaction
-    if @all.pop == self.title 
+    if @all.length == self.title 
       binding.pry 
         @last_price = self.price 
     end 
