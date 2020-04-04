@@ -26,12 +26,12 @@ class CashRegister
   end
   
   def items
-    items = []
+    @items = []
     
     quantity.times do 
-        items << @title 
+        @items << @title 
     end 
-    items
+    @items
   end 
   
 end
