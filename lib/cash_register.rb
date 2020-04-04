@@ -17,11 +17,6 @@ class CashRegister
       quantity.times do 
         @all << title 
       end
-      
-      if @all.pop == self.title 
-        @last_price = self.price 
-      end 
-      
   end 
   
   def apply_discount
@@ -29,7 +24,7 @@ class CashRegister
       self.total = (self.total * (1 - self.discount.to_f/100.0)).to_i 
       return "After the discount, the total comes to $#{self.total}."
     else 
-      self.total
+      self.total 
       return "There is no discount to apply."
     end 
   end
