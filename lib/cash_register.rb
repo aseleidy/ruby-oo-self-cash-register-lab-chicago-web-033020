@@ -18,6 +18,9 @@ class CashRegister
         @all << title 
       end
       
+      if @all.pop == title 
+        @price = price 
+      end 
       
   end 
   
