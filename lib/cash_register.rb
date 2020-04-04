@@ -1,7 +1,7 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :total
+  attr_accessor :total, :last_item
   attr_reader :discount, :title, :price, :quantity
   
   
@@ -30,10 +30,6 @@ class CashRegister
   end
   
   def items
-    
-    # @quantity.times do 
-    #     @items << @title 
-    # end 
     @all
   end 
   
