@@ -38,7 +38,7 @@ class CashRegister
   
   
   def void_last_transaction
-    last_amount = (@price.pop)*(self.quantity)
+    last_amount = (@price.last)*(self.quantity)
     @total -= last_amount
     # if @all.last == self.title 
     #   binding.pry 
