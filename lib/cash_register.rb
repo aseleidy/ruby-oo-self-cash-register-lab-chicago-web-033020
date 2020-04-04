@@ -1,7 +1,7 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :total 
+  attr_accessor :total, :prices 
   attr_reader :discount, :title, :price, :quantity
   
   
@@ -38,7 +38,7 @@ class CashRegister
   
   
   def void_last_transaction
-    last_amount = @price.pop*self.quantity
+    last_amount = (@price.pop)*(self.quantity)
     @total -= last_amount
     # if @all.last == self.title 
     #   binding.pry 
