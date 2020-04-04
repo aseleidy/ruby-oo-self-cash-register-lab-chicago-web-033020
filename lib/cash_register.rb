@@ -18,9 +18,9 @@ class CashRegister
         @all << title 
       end
       
-      # if @all.pop == title 
-      #   @last_price = price 
-      # end 
+      if @all.pop == title 
+        @last_price = price 
+      end 
       
   end 
   
