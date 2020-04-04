@@ -1,7 +1,7 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :total, :all
+  attr_accessor :total, 
   attr_reader :discount, :title, :last_price
   
   
@@ -18,9 +18,9 @@ class CashRegister
         @all << title 
       end
       
-      if @all.pop == title 
-        @last_price = price 
-      end 
+      # if @all.pop == title 
+      #   @last_price = price 
+      # end 
       
   end 
   
@@ -38,8 +38,8 @@ class CashRegister
     @all
   end 
   
-  def void_last_transaction
-    @last_price
-  end 
+  # def void_last_transaction
+  #   @last_price
+  # end 
   
 end
